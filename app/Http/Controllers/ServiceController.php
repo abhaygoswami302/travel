@@ -48,7 +48,7 @@ class ServiceController extends Controller
     public function show($id)
     {
         $service = Service::where('id', '=', $id)->first();
-        return view('services.show.index', compact('service'));
+        return view('categories.index', compact('service'));
     }
 
     /**
